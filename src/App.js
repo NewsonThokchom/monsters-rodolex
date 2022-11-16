@@ -27,7 +27,20 @@ class App extends Component {
 
           <button
             onClick={() => {
-              this.setState({ name: { firstName: 'Lone', lastName: 'Coder' }, company: 'LoneCoder YT' })
+
+              // first function is the updater function - passing a function that returns object i.e, name:{...},company:'..'
+              // second function is the callback function
+
+              // state variable is equal to the current state but second callback function is optional
+              // second function ie, callback function is going to run only after all of the state changes have been applied
+              this.setState((state, props) => {
+                return { name: { firstName: 'Lone', lastName: 'Coder' }, company: 'LoneCoder YT' }
+              }, () => {
+                console.log(this.state) // this will print the updated state
+              })
+
+              console.log(this.state) // this will print the current state
+
             }}
           >Change Name</button>
         </header>
