@@ -11,7 +11,7 @@ class App extends Component {
         firstName: 'Newson',
         lastName: 'Thokchom',
       },
-      company: 'Lamzing Technologies'
+      company: 'Lamzing Technologies Pvt.Ltd.'
     }
 
   }
