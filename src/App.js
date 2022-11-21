@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
 import Cardlist from './components/card-list/card-list.component';
@@ -57,7 +56,7 @@ class App extends Component {
         })
         } */}
 
-        <SearchBox onChangeHandler={onSearchChange} placeholder='Search Monsters' searchBox='Search-box' />
+        <SearchBox onChangeHandler={onSearchChange} placeholder='Search Monsters' className='monster-search-box' />
         <Cardlist monsters={filteredMonsters} />
       </div>
     );
