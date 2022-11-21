@@ -36,6 +36,7 @@ class App extends Component {
 
 
   render() {
+    // console.log('render from app js')
     // Object destructuring (ES6)
     const { monsters, searchField } = this.state
     const { onSearchChange } = this
