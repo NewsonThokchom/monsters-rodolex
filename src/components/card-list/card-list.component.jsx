@@ -2,12 +2,14 @@ import { Component } from "react";
 
 class Cardlist extends Component {
     render() {
+        const { monsters } = this.props
+
         return (
             <div>
-                <h1>Hello, I'm the card list component.</h1>
-                <div>
-                    <p>Text</p>
-                </div>
+                {monsters.map((monster) => (
+                    <h1 key={monster.id}>{monster.name}</h1>
+                ))
+                }
             </div>
         )
     }
